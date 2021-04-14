@@ -33,9 +33,3 @@ rule calc_prs:
         mkdir -p prs_runs/{wildcards.cohort}/{wildcards.trait}/{wildcards.trait}.sim_run{wildcards.i}
         python /work-zfs/abattle4/ashton/prs_dev/prs_tools/calc_prs.py  -snps {params.source_dir}/new_plink  -ss {input.ss} -o {params.out_suff} -pv 2 --ss_format DEFAULT --preprocessing_done --prefiltered_ss --no_na --select_vars {input.snps} --inverted_snp_encoding --reset_ids --plink_snp_matrix {params.source_dir}/mat_form_tmp --keep_matrix
         """
-~                                                                                                                                                                                                                 
-~                                                                                                                                                                                                                 
-~                                                                                                                                                                                                                 
-~                                                                                                                                                                                                                 
-~                                                                                                                                                                                                                 
-~                     
